@@ -1,21 +1,65 @@
+:root {
+  --primary-color: navy;
+  --secondary-color: rgb(214, 10, 10);
+  --nav-height: 50px;
+  --greeting-font: "Courier New", Courier, monospace;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
 }
 
 main {
   height: 100dvh;
   width: 100dvw;
   overflow: hidden;
+  nav {
+    height: var(--nav-height);
+    box-shadow: 1px 1px 0.5px #00000020;
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 100px;
+      margin: 0 10px;
+      font-size: large;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      &.active {
+        font-weight: bold;
+        background: radial-gradient(
+          var(--secondary-color),
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        &::first-letter {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  section {
+    height: calc(100vh - var(--nav-height));
+  }
 }
 
-main.home-page {
+main section.home-page {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  font-family: var(--greeting-font);
+  h1 {
+    font-size: 30px;
+  }
   small {
     display: block;
     direction: rtl;

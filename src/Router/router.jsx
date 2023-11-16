@@ -1,4 +1,4 @@
-import { pages } from "./routes.statics";
+import { pages } from "./routes.constants";
 
 const Router = ({ selectedMenu }) => {
   const selectedPage = pages.find((page) =>
