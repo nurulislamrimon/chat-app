@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
+}
+
+main.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  small {
+    display: block;
+    direction: rtl;
+  }
+}
