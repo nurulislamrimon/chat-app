@@ -28,7 +28,19 @@ main {
       border: none;
       background-color: transparent;
       cursor: pointer;
+      transition: all 0.5s ease-in-out;
 
+      &:hover {
+        font-weight: bold;
+        background: radial-gradient(
+          var(--secondary-color),
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
       &.active {
         font-weight: bold;
         background: radial-gradient(

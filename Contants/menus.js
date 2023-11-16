@@ -4,6 +4,10 @@ export const menus = [
     value: "Home",
   },
   {
+    label: "Chat",
+    value: "Chat",
+  },
+  {
     label: "Login",
     value: "Login",
   },
@@ -12,7 +16,7 @@ export const menus = [
     value: "Signup",
   },
   {
-    label: "Chat",
-    value: "Chat",
+    label: "Log out",
+    value: "Log out",
   },
 ];
